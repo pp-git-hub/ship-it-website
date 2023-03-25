@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FAQs:Frequently Asked Questions</title>
+    <style>
+        body {
+    background-image: url(faq-pic.jpg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+title{
+   
+}
+
+.layout {
+width: 600px;
+margin: auto;
+}
+.faq {
+padding: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+background-color:rgba(255, 250, 250, 0.5);
+border-radius: 10px;
+}
+.faq__question p {
+margin: 5px;
+padding: 0;
+font-family: Verdana;
+font-size: 20px;
+}
+.faq__answer p {
+margin: 5px;
+padding: 10px;
+font-size: large;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: rgb(255, 255, 255);
+background: rgb(82, 170, 122);
+border-radius: 10px;
+}
+.faq:hover {
+cursor: pointer;
+}
+.faq__answer {
+display: none;
+}
+.faq.active .faq__answer {
+display: block;
+}
+
+#heading{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    background-color:rgb(81, 118, 242);
+    margin:50px;
+    border-radius: 20px;
+}
+
+img{
+    height: 300px;  
+    width: 350px;  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <img src="logo-modified.png" alt="">
+    <div id = "heading">
+	FAQs : <i>Frequently Asked Questions</i>
+</div>
+<div class="layout">
+	<div class="faq">
+	<div class="faq__question">
+		<p>1. Do I need to pay a Registration Fee/Subscription Fee?</p>
+	</div>
+    <div class="faq__answer">
+		<p>No, there is no registration fee or any other monthly subscription charges. This is a ‘pay as you go’ model, where you recharge your "Ship it" wallet, and the money gets deducted as and when you ship.</p>
+	</div>
+    </div>
+
+    <div class="layout">
+        <div class="faq">
+        <div class="faq__question">
+            <p>2. Are there any terms and conditions or minimum order requirement to start shipping with Ship It?</p>
+        </div>
+        <div class="faq__answer">
+            <p>No, you can schedule the orders as per your requirement</p>
+        </div>
+        </div>
+
+	<div class="faq">
+	<div class="faq__question">
+		<p>3. What is the mode of payment for shipping charges?</p>
+	</div>
+
+	<div class="faq__answer">
+		<p>
+            The payment mode is prepaid through Paytm Wallet. You can recharge as per your flexibility. Paytm Wallet is a safe and secure way to pay for your shipments.
+		</p>
+	</div>
+	</div>
+    
+    <div class="faq">
+        <div class="faq__question">
+            <p>4. What happens if my shipment is lost or damaged in transit?</p>
+        </div>
+    
+        <div class="faq__answer">
+            <p>
+                We assure you that all shipments in our network will reach you untampered and in the same condition as handed over to us. However, in such a case, Ship It will compensate upto a maximum of Rs.2000 per shipment or the shipment value, whichever is lower. If you want a higher insurance coverage, you can buy an insurance policy via a third party. In the latter case, Delhivery will provide you with a Certificate of Facts (CoF) for lost shipments using which you can claim from your insurance provider.
+            </p>
+        </div>
+        </div>
+
+        <div class="faq">
+            <div class="faq__question">
+                <p>5. Are there any extra pick up charges?</p>
+            </div>
+        
+            <div class="faq__answer">
+                <p>
+                    No, the pricing shared with you includes pick up & delivery from and to the consignee’s doorstep.
+                </p>
+            </div>
+            </div>
+</div>
+
+<script>
+    let answers = document.querySelectorAll(".faq");
+    answers.forEach((event) => {
+    event.addEventListener("click", () => {
+	if (event.classList.contains("active")) {
+	event.classList.remove("active");
+          return 0;
+	} else {
+	event.classList.add("active");
+         return 0;
+	}
+});
+});
+
+</script>
+
+</body>
+
+</html>
